@@ -12,6 +12,15 @@ export class UserService {
         private readonly encryptionService: EncryptionService
     ) {}
 
+    async findByProviderId(providerId: string): Promise<User | undefined>  {
+        const res = await this.neo4jService.read(`
+        MATCH (u: User {providerId: $providerId})
+        RETURN U
+        `, {providerId})
+
+        return res.records.length == 1 ? res.records[0].get('u') : undefined
+    }
+
     async create(
         method: string, 
         providerToken: string,
