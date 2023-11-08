@@ -16,7 +16,7 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
-  afterEach(() => app.close())
+  //afterEach(() => app.close())
 
   describe('Auth', () => {
     describe('Post /auth/register', () => {
