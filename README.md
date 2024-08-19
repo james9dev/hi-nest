@@ -1,40 +1,43 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="https://nodejs.org/" target="blank"><img src="https://avatars.githubusercontent.com/u/9950313?s=200&v=4" width="100"/></a>
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="100"/></a>  
+  <a href="https://www.typescriptlang.org/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png" width="100"/></a>
+  <a href="https://neo4j.com/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Neo4j-logo_color.png/240px-Neo4j-logo_color.png" width="200"/></a>   
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Node.js, NestJS, TypeScript와 Graph DB인 Neo4j 학습을 위한 프로젝트
+
 
 ## Description
+Node.js: [https://nodejs.org](https://nodejs.org)   
+NestJS: [https://nestjs.com](https://nestjs.com)   
+TypeScript: [https://www.typescriptlang.org](https://www.typescriptlang.org)   
+Neo4j: [https://neo4j.com](https://neo4j.com)   
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+#### Node.js와 NestJS, TypeScript
+- NestJS를 사용시 Node.js 기반으로 빠르게 API 서버 구축이 가능하다는 장점을 가지고 있어서 선택
+- 실제 학습 난이도가 낮으며, 빠른 구축이 가능하여 시장 테스트를 위해 서비스를 만들 경우 매우 현명한 선택이 될듯 하다.
+- 하지만, 어느 기술이든 깊이 있는 수준으로 들어 가기 위해서는 많은 시간과 노력이 필요 하듯이, 이 또한 그러하다.
+
+
+#### Neo4j
+- 소셜 서비스를 만들기 위해서 고민하던 중, 실제 소셜 관계와 비슷한 형태로 처리가 가능하고, 수 많은 소셜 관계 처리에 있어서 높은 성능을 얻을 수 있어 선택
+- 기본적인 학습은 RDB와 SQL에 대한 개념이 있을 경우 진입 장벽이 높은 편은 아니다.
+- 하지만, RDB 방식으로 데이터 구조를 설계 할 경우 RDB를 사용하는 것 보다 비효율적인 성능이 나온다.
+- GraphDB에 맞는 데이터 구조 설계가 필요하다.
+
+
+
+## Node.js 설치 및 활용
 
 ```bash
+## installation
 $ npm install
-```
+
 
 ## Running the app
-
-```bash
 # development
 $ npm run start
 
@@ -43,11 +46,9 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
-```
+
 
 ## Test
-
-```bash
 # unit tests
 $ npm run test
 
@@ -57,17 +58,3 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
